@@ -1,4 +1,4 @@
-import { type CoreConcept } from "@/types";
+import { type CoreConcept, type Examples } from "@/types";
 
 import componentsImg from "@/assets/images/components.png";
 import jsxImg from "@/assets/images/jsx.png";
@@ -32,7 +32,7 @@ export const CORE_CONCEPTS: CoreConcept[] = [
   },
 ];
 
-export const EXAMPLES = {
+export const EXAMPLES: Examples = {
   components: {
     title: "Components",
     description:
