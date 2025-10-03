@@ -14,8 +14,8 @@ export default function Header() {
         React Essentials
       </h1>
       <h3 className="text-lg text-center text-purple-500">
-        {descriptions[generateRandomNumber(2)]} React concepts you will need for
-        almost any app you are going to build!
+        {descriptions[generateRandomNumber(descriptions.length - 1)]} React
+        concepts you will need for almost any app you are going to build!
       </h3>
     </header>
   );
