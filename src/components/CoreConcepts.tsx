@@ -1,10 +1,10 @@
+import Card from "@/components/Card";
 import CoreConcept from "@/components/CoreConcept";
-
 import { CORE_CONCEPTS } from "@/data";
 
 export default function CoreConcepts() {
   return (
-    <div className="bg-slate-950 p-8 rounded shadow space-y-4">
+    <Card className="space-y-4">
       <h2 className="text-2xl text-center text-purple-300 font-bold">
         Core Concepts
       </h2>
@@ -14,6 +14,6 @@ export default function CoreConcepts() {
           <CoreConcept key={coreConcept.title} coreConcept={coreConcept} />
         ))}
       </div>
-    </div>
+    </Card>
   );
 }

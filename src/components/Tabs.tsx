@@ -1,5 +1,6 @@
 import { useState, type ReactNode } from "react";
 
+import Card from "@/components/Card";
 import TabButton from "@/components/TabButton";
 
 type TabsProps = {
@@ -24,9 +25,7 @@ export default function Tabs({ defaultIndex = 0, tabs }: TabsProps) {
         ))}
       </div>
 
-      <div className="bg-slate-950 p-8 rounded shadow">
-        {tabs[selectedIndex].content}
-      </div>
+      <Card>{tabs[selectedIndex].content}</Card>
     </div>
   );
 }
