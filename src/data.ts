@@ -1,9 +1,11 @@
+import { type CoreConcept } from "@/types";
+
 import componentsImg from "@/assets/images/components.png";
 import jsxImg from "@/assets/images/jsx.png";
 import propsImg from "@/assets/images/props.png";
 import stateImg from "@/assets/images/state.png";
 
-export const CORE_CONCEPTS = [
+export const CORE_CONCEPTS: CoreConcept[] = [
   {
     image: componentsImg,
     title: "Components",
