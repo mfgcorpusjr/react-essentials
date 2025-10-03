@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: "Alan Sans", sans-serif;
+    @apply bg-purple-950 p-8;
+  }
+}
