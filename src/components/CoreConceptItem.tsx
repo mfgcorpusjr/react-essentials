@@ -1,10 +1,10 @@
 import { type CoreConcept } from "@/types";
 
-type CoreConceptProps = {
+type CoreConceptItemProps = {
   coreConcept: CoreConcept;
 };
 
-export default function CoreConcept({ coreConcept }: CoreConceptProps) {
+export default function CoreConceptItem({ coreConcept }: CoreConceptItemProps) {
   return (
     <div className="text-center">
       <img

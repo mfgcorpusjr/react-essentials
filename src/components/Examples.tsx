@@ -1,16 +1,12 @@
 import Tabs from "@/components/Tabs";
-import ExampleContent from "@/components/ExampleContent";
-
+import ExampleItem from "@/components/ExampleItem";
 import { EXAMPLES } from "@/data";
 
 export default function Examples() {
-  const tabs = [];
-  for (const key in EXAMPLES) {
-    tabs.push({
-      label: key.toUpperCase(),
-      content: <ExampleContent example={EXAMPLES[key]} />,
-    });
-  }
+  const tabs = EXAMPLES.map((example) => ({
+    label: example.title,
+    content: <ExampleItem example={example} />,
+  }));
 
   return (
     <div className="space-y-4">

@@ -9,7 +9,3 @@ export type Example = {
   description: string;
   code: string;
 };
-
-export type Examples = {
-  [key: string]: Example;
-};

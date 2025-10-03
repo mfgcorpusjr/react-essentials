@@ -1,10 +1,10 @@
 import { type Example } from "@/types";
 
-type ExampleContentProps = {
+type ExampleItemProps = {
   example: Example;
 };
 
-export default function ExampleContent({ example }: ExampleContentProps) {
+export default function ExampleItem({ example }: ExampleItemProps) {
   return (
     <>
       <h3 className="mb-4 text-white text-lg font-bold">{example.title}</h3>

@@ -1,5 +1,5 @@
 import Card from "@/components/Card";
-import CoreConcept from "@/components/CoreConcept";
+import CoreConceptItem from "@/components/CoreConceptItem";
 import { CORE_CONCEPTS } from "@/data";
 
 export default function CoreConcepts() {
@@ -11,7 +11,7 @@ export default function CoreConcepts() {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
         {CORE_CONCEPTS.map((coreConcept) => (
-          <CoreConcept key={coreConcept.title} coreConcept={coreConcept} />
+          <CoreConceptItem key={coreConcept.title} coreConcept={coreConcept} />
         ))}
       </div>
     </Card>
